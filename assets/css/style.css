@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background: linear-gradient(0deg, #111111 0%, #ffffff 63%);
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background: #111111;
+    color: #ffffff;
+    border-bottom: 25px solid red;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    flex: 0 auto;
+    padding: 8px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.main-header {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: auto;
+    padding: 20px;
+}
+
+button {
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 2em;
+    line-height: 16px;
+    max-width: 255px;
+    padding: 20px 52px;
+    text-align: center;
+    margin-top: 0.6em;
+}
+
+.guess-word {
+    width: 55vw;
+    height: 400px;
+}
+
+.word-blanks {
+    font-size: 3.5em;
+    text-align: center;
+    line-height: 360px;
+}
+
+.results {
+    width: 30vw;
+    height: 400px;
+}
+
+.reset {
+    font-size: 16px;
+    height: 30px;
+    line-height: 8px;
+    margin-top: 20px;
+}
+
+.win-loss {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.timer {
+    height: 240px;
+    padding: 10px;
+    background: #111111;
+    color: #ffffff;
+    text-align: center;
+}
+
+.timer-text {
+    padding: 55px;
+}
+
+@media screen and (max-width: 1183px) {
+    main {
+        flex-direction: column;
+    }
+
+    .guess-word,
+    .results {
+        width: 99vh;
+    }
+
+    section {
+        margin: 20px auto;
+        width: 92vw;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .main-header {
+        font-size: 2em;
+    }
+
+    .reset {
+        font-size: 12px;
+        width: 20px;
+    }
+
+    .timer {
+        height: 200px;
+    }
+}
